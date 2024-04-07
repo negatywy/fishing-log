@@ -25,13 +25,13 @@ export function SearchFishScreen({ route }) {
   const [dateLabel, setDateLabel] = useState('Wybierz datę');
 
   const fishImages = {
-    Sum: require('../images/sum.png'),      
-    Płoć: require('../images/ploc.png'),
-    Okoń: require('../images/okon.png'),
-    Szczupak: require('../images/szczupak.png'),
-    Leszcz: require('../images/leszcz.png'),
-    Karp: require('../images/karp.png'),
-    Sandacz: require('../images/sandacz.png'),
+    Sum: require('../images/sum.jpg'),      
+    Płoć: require('../images/ploc.jpg'),
+    Okoń: require('../images/okon.jpg'),
+    Szczupak: require('../images/szczupak.jpg'),
+    Leszcz: require('../images/leszcz.jpg'),
+    Karp: require('../images/karp.jpg'),
+    Sandacz: require('../images/sandacz.jpg'),
   };
 
   const showDatePicker = () => {
