@@ -76,7 +76,7 @@ export function SearchFishScreen({ route }) {
       catchDateCondition: catchDateCondition,
     };
 
-    Axios.get('http://192.168.1.247:3001/getFish', { params })
+    Axios.get('http://192.168.1.247:3001/fish/getFish', { params })
       .then((response) => {
         setSearchResults(response.data);
         setIsSearching(false);

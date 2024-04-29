@@ -12,7 +12,7 @@ function Login({ navigation }) {
     event.preventDefault();
     
     try {
-        await Axios.post('http://192.168.1.247:3001/login', {
+        await Axios.post('http://192.168.1.247:3001/user/login', {
             username, password,
         });     
         navigation.navigate('Lista ryb', { username });

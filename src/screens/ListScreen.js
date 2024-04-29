@@ -9,7 +9,7 @@ export function ListScreen({ route, navigation }) {
   const { username } = route.params;
   const [listOfFish, setListOfFish] = useState([]);
   const [showMenu, setShowMenu] = useState(false);
-  const apiUrl = `http://192.168.1.247:3001/getFish`;
+  const apiUrl = `http://192.168.1.247:3001/fish/getFish`;
 
   const fetchFishData = () => {
     const params = { user: username };

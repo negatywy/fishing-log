@@ -41,7 +41,7 @@ export function InputFishScreen({ route, navigation }) {
       return;
     }
 
-    Axios.post('http://192.168.1.247:3001/postFish', {
+    Axios.post('http://192.168.1.247:3001/fish/postFish', {
       gatunek, user: username, weight, length,
     }).then((response) => {
       Alert.alert('Dodano rybę', 'Powrót do listy', [

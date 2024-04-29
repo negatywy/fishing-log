@@ -12,7 +12,6 @@ export function AccountDetailsScreen({ route, navigation }) {
 
   const logout = () => {
     navigation.navigate('Home');
-    // Reset username and password in the Login component
     navigation.reset({
       index: 0,
       routes: [{ name: 'Home' }],
@@ -28,7 +27,7 @@ export function AccountDetailsScreen({ route, navigation }) {
         return;
       }
 
-      const response = await Axios.post('http://192.168.1.247:3001/changePassword', {
+      const response = await Axios.post('http://192.168.1.247:3001/user/changePassword', {
         username,
         currentPassword, 
         newPassword,

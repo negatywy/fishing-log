@@ -15,7 +15,7 @@ export function RegisterScreen({ navigation }) {
         return; 
       }
       
-      await Axios.post('http://192.168.1.247:3001/register', {
+      await Axios.post('http://192.168.1.247:3001/user/register', {
         username,
         password,
       });
